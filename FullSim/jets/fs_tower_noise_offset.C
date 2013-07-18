@@ -24,15 +24,19 @@
 #include <fstream>
 #include <iomanip>
 
-#define maxHDe 3
-#define maxHDlumi 2
+//#define maxHDe 3
+#define maxHDe 1
+#define maxHDlumi 8
+//#define maxHDlumi 2
 #define maxHDeta 13
 #define maxPrint 2
 #define M_PI 3.14159265358979323846
 
 //energy values - global
-Double_t energies[] = {30, 50, 100};
-Double_t lumis[] = {0, 500};
+//Double_t energies[] = {30, 50, 100};
+Double_t energies[] = {30};
+Double_t lumis[] = {0, 100, 200, 300, 400, 500, 600, 700};
+//Double_t lumis[] = {0, 500};
 Double_t etas[] = {1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 2.8, 2.9, 3.0};
 Int_t year[] = {2017, 2019};
 
