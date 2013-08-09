@@ -196,7 +196,7 @@ void plot_offsets(bool do_2019, unsigned do_print=0){
 	pad1->Draw();
 	pad1->cd();
 
-	std::string yrnames[] = {"2017 (HPDs)","2019 (SiPMs, 5#circC)"};
+	std::string yrnames[] = {"2017 (HPDs)","2019 (SiPMs)"};
 	std::stringstream jname;
 	jname << "CaloTowers, dR < 0.5, " << yrnames[do_2019];
 	
