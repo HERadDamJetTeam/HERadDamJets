@@ -144,7 +144,7 @@ TGraph* get_offsets(int Lnum, bool do_2019, bool do_show, unsigned do_print=0){
 	for(int i = 0; i < maxHDeta; i++){
 		xval[i] = etas[i] + etastep/2.;
 		yval[i] = get_noise(0,Lnum,i,do_2019,0);
-		yval[i] *= 0.25; //scale from area of ring deta < 0.5 to area of cone dR < 0.5: (pi/4)/pi
+		yval[i] *= 0.125; //scale from area of ring deta < 0.5 to area of cone dR < 0.5: (pi/4)/(2pi)
 	}
 
 	TGraph* graph = new TGraph(maxHDeta,xval,yval);
